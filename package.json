@@ -1,0 +1,25 @@
+{
+  "name": "jsomatic",
+  "version": "0.1.0-alpha",
+  "description": "JSOMATIC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Cristian Mello",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cristiancmello/jsomatic.git"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "devDependencies": {
+    "fs-extra": "^2.0.0",
+    "gulp-mocha": "^3.0.1"
+  }
+}

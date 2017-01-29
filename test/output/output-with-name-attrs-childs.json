@@ -1,0 +1,1 @@
+{"name":"g","attrs":{"transform":"translate(0,250)","x":"100px"},"childs":[{"name":"image","attrs":{"transform":"translate(0,250)","x":"100px"},"childs":[{"name":"g1","attrs":{},"childs":[]},{"name":"g2","attrs":{},"childs":[]}]},{"name":"line","attrs":{},"childs":[]}]}
