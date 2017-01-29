@@ -1,6 +1,6 @@
 {
   "name": "jsomatic",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0",
   "description": "JSOMATIC.",
   "main": "index.js",
   "scripts": {
@@ -13,10 +13,7 @@
     "url": "git://github.com/cristiancmello/jsomatic.git"
   },
   "files": [
-    "bin",
-    "lib",
-    "src",
-    "README.md"
+    "src"
   ],
   "devDependencies": {
     "fs-extra": "^2.0.0",
