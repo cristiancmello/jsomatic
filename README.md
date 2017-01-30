@@ -65,9 +65,10 @@ console.log(tag.toJson());
 const {Tag, Mixin, fsMixin} = require('jsomatic');
 Mixin.set(Tag, fsMixin); // mixins to filesystem operations
 
-// Create root element and fill it
+// Create root element
 let tag = new Tag();
 
+// Read file and fill tag
 tag.readFile('input.json');
 
 // Show JSON
