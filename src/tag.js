@@ -52,28 +52,26 @@ Tag.prototype.toJson = function()
         return '{}';
 
     const strMapToObj = (strMap) => {
-        let obj = Object.create(null);
+        let obj = {};
+
         for (let [k,v] of strMap)
             obj[k] = v;
 
         return obj;
     };
-    
+
     const scan = (obj, _json) => {
-        let k;
-        if (obj instanceof Object) {
-            for (k in obj){
-                if (obj.hasOwnProperty(k)){
-                    if (obj[k] instanceof Map)
-                        _json[k] = strMapToObj(obj[k]);
-                    else
-                        _json[k] = obj[k];
-                    
-                    scan(obj[k], _json[k]);
-                }
-            }
-        }
-        
+
+        _json['name'] = obj['name'];
+        _json['attrs'] = strMapToObj(obj['attrs']);
+        _json['childs'] = [];
+
+        if (obj['childs'].length == 0) return _json;
+
+        obj['childs'].forEach((elem, key) => {
+            _json['childs'].push(scan(elem, {}));
+        });
+
         return _json;
     };
 
@@ -88,8 +86,8 @@ Tag.prototype.toXml = function()
     const attrsMapToXmlAttrs = (attrs) => {
         let str_attrs = '';
         let i = 0;
-
-       attrs.forEach((value, key) => {
+        
+        attrs.forEach((value, key) => {
             
             if (i < attrs.size - 1)
                 str_attrs += `${key}="${value}" `;
