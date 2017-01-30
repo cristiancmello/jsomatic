@@ -6,8 +6,7 @@ JsoMatic provides class primitives to construct representations of XML tags in J
 It's important to note that the data format for tag persistence is JSON, only.
 
 ## Requirements
-- **Node.js** >= v6.9.4
-
+- **Node.js** >= v6.1.0
 
 ## Installation
 ```bash
