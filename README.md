@@ -71,13 +71,13 @@ tag.readFile('input.json');
 console.log(tag.toJson());
 
 // Show XML
-console.log(tag.toXml()); // Some problems...
+console.log(tag.toXml());
 
 /*
     OUTPUT:
     "
     {"name":"g","attrs":{"transform":"translate(0, 250px)"},"childs":[{"name":"g","attrs":{"x":"100px","y":"45px"},"childs":[]}]}
-    <g transform="translate(0, 250px)"><g</g></g>
+    <g transform="translate(0, 250px)"><g x="100px" y="45px"></g></g>
     "
 */
 ```
