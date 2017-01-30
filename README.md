@@ -5,6 +5,10 @@
 JsoMatic provides class primitives to construct representations of XML tags in JavaScript/JSON.
 It's important to note that the data format for tag persistence is JSON, only.
 
+## Requirements
+- **Node.js** >= v6.9.4
+
+
 ## Installation
 ```bash
 npm install jsomatic
