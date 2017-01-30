@@ -1,6 +1,6 @@
 # JsoMatic
 
-[![Linux CI](https://img.shields.io/travis/cristiancmello/jsomatic.svg)](https://travis-ci.org/cristiancmello/jsomatic)
+[![Linux CI](https://travis-ci.org/cristiancmello/jsomatic.svg?branch=master)](https://travis-ci.org/cristiancmello/jsomatic)
 
 JsoMatic provides class primitives to construct representations of XML tags in JavaScript/JSON.
 It's important to note that the data format for tag persistence is JSON, only.
