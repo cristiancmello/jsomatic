@@ -102,6 +102,10 @@ Tag.prototype.toXml = function()
                 else
                     str_attrs += `${key}="${value}"`;
             }
+
+            if (this.setXmlMutator != undefined){
+                str_attrs = this.setXmlMutator(key, value, str_attrs);
+            }
             
             i++;
         });
