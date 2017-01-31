@@ -1,7 +1,7 @@
 {
   "name": "jsomatic",
-  "version": "0.1.0",
-  "description": "JSOMATIC.",
+  "version": "0.1.1",
+  "description": "JsoMatic provides class primitives to construct representations of XML tags in JavaScript/JSON.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

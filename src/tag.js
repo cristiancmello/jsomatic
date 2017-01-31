@@ -89,11 +89,20 @@ Tag.prototype.toXml = function()
         
         attrs.forEach((value, key) => {
             
-            if (i < attrs.size - 1)
-                str_attrs += `${key}="${value}" `;
-            else
-                str_attrs += `${key}="${value}"`;
-
+            if (value instanceof Object)
+            {
+                if (i < attrs.size - 1)
+                    str_attrs += `${key}="${value.toString()}" `;
+                else
+                    str_attrs += `${key}="${value.toString()}"`;
+            } else
+            {
+                if (i < attrs.size - 1)
+                    str_attrs += `${key}="${value}" `;
+                else
+                    str_attrs += `${key}="${value}"`;
+            }
+            
             i++;
         });
 
