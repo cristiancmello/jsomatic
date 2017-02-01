@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.2
+- Fix toXml() method
+- Add setXmlMutator call in toXml() method
+
 ## v0.1.1
 - Refactoring toJson() method
 - Update requirements
